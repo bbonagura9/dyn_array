@@ -77,7 +77,7 @@ dyn_array_node *dyn_array_get_node(int index, dyn_array *array) {
 	int i;
 	dyn_array_node *p; 
 
-	if(index < 0 || index > array->node_count || array == NULL) {
+	if(index < 0 || index >= array->node_count || array == NULL) {
 		return NULL;
 	}
 
